@@ -1,0 +1,75 @@
+<!--
+  Generated template for the AddSalePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Add sale</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<form #addForm="ngForm" novalidate>
+		<ion-list no-lines>
+			<ion-item>
+				<ion-label stacked color="primary">Descripcion</ion-label>
+				<ion-input [(ngModel)]="add.description" name="description" type="text" #description="ngModel" spellcheck="false" autocapitalize="off"
+					required>
+				</ion-input>
+			</ion-item>
+			<p ion-text [hidden]="description.valid || submitted == false" color="danger" padding-left>
+				Descripcion is required
+			</p>
+
+			<ion-item>
+				<ion-label stacked color="primary">Precio total</ion-label>
+				<ion-input [(ngModel)]="add.totalPrice" name="totalPrice" type="number" #totalPrice="ngModel" required>
+				</ion-input>
+			</ion-item>
+			<p ion-text [hidden]="totalPrice.valid || submitted == false" color="danger" padding-left>
+				Total price is required
+			</p>
+
+			<ion-item>
+				<ion-label stacked color="primary">Hora de inicio de venta</ion-label>
+				<ion-input [(ngModel)]="add.startedAt" name="startedAt" type="text" #startedAt="ngModel" spellcheck="false" autocapitalize="off"
+					required>
+				</ion-input>
+			</ion-item>
+			<p ion-text [hidden]="startedAt.valid || submitted == false" color="danger" padding-left>
+				Hora de inicio is required
+			</p>
+
+			<ion-item>
+				<ion-label stacked color="primary">Hora de cierre de venta</ion-label>
+				<ion-input [(ngModel)]="add.completedAt" name="completedAt" type="text" #completedAt="ngModel" spellcheck="false" autocapitalize="off"
+					required>
+				</ion-input>
+			</ion-item>
+			<p ion-text [hidden]="completedAt.valid || submitted == false" color="danger" padding-left>
+				Hora de cierre is required
+			</p>
+
+			<ion-item>
+				<ion-label stacked color="primary">Completado</ion-label>
+				<ion-input [(ngModel)]="add.completed" name="completed" type="text" #completed="ngModel" required>
+				</ion-input>
+			</ion-item>
+			<p ion-text [hidden]="completed.valid || submitted == false" color="danger" padding-left>
+				Check if completed is required
+			</p>
+		</ion-list>
+
+		<ion-row responsive-sm>
+			<ion-col>
+				<button ion-button (click)="cardDetails(addForm)" type="submit" block>Anhadir</button>
+				<!--<button ion-button (click)="onAdd(addForm)" type="submit" block>Anhadir</button>-->
+			</ion-col>
+    </ion-row>
+	</form>
+</ion-content>

@@ -1,0 +1,44 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-buttons end *ngIf="showSkip">
+      <button ion-button (click)="startApp()" color="primary">Skip</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce>
+  <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-1.png" class="slide-image"/>
+      <h2 class="slide-title">
+        Welcome to <b>Inside</b>
+      </h2>
+      <p>
+        The <b>Inside app</b> is a practical preview of the sales that you do at work and a demonstration of the current products available.
+      </p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-2.png" class="slide-image"/>
+      <h2 class="slide-title" >What is Inside?</h2>
+      <p><b>Inside</b> will present your sales in a beautiful way and let you modify them however you want and show them in a map for an easy geolocation preview.</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-3.png" class="slide-image"/>
+      <h2 class="slide-title">What is Inside Platform?</h2>
+      <p>The <b>Inside Platform</b> is a cloud platform for managing and scaling small business with integrated services like incidences, native builds, user auth, and live updating.</p>
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image"/>
+      <h2 class="slide-title">Ready to Go?</h2>
+      <button ion-button icon-right large clear (click)="startApp()">
+        Continue
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+
+  </ion-slides>
+</ion-content>

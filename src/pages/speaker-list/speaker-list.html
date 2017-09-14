@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Products</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="outer-content speaker-list">
+  <ion-list >
+    <ion-grid fixed>
+      <ion-row align-items-stretch>
+
+        <ion-col col-12 col-md-6 align-self-stretch align-self-center  approxItemHeight="457px">
+
+          <ion-card class="speaker-card">
+            <ion-card-header>
+              <ion-avatar item-start>
+              </ion-avatar>
+              Plan Premium
+            </ion-card-header>
+
+            <ion-card-content class="outer-content">
+              <ion-list>
+                <h3>100min free</h3>
+
+                <h3>50GB</h3>
+              </ion-list>
+            </ion-card-content>
+
+            <ion-row no-padding>
+
+              <ion-col col-12 col-lg-auto text-center text-lg-right>
+                <button ion-button clear small color="primary" icon-left (click)="openContact()">
+                  <ion-icon name='chatboxes'></ion-icon>
+                  Contact
+                </button>
+              </ion-col>
+            </ion-row>
+
+          </ion-card>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+</ion-content>

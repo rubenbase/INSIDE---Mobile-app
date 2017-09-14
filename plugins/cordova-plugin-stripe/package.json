@@ -1,0 +1,97 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-stripe",
+        "scope": null,
+        "escapedName": "cordova-plugin-stripe",
+        "name": "cordova-plugin-stripe",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/home/tubuntu/insideMobile/node_modules"
+    ]
+  ],
+  "_from": "cordova-plugin-stripe@latest",
+  "_id": "cordova-plugin-stripe@1.4.1",
+  "_inCache": true,
+  "_location": "/cordova-plugin-stripe",
+  "_nodeVersion": "7.4.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/cordova-plugin-stripe-1.4.1.tgz_1491014250595_0.5851893092039973"
+  },
+  "_npmUser": {
+    "name": "ihadeed",
+    "email": "i.hadeed@zyra.ca"
+  },
+  "_npmVersion": "4.0.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-stripe",
+    "scope": null,
+    "escapedName": "cordova-plugin-stripe",
+    "name": "cordova-plugin-stripe",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-stripe/-/cordova-plugin-stripe-1.4.1.tgz",
+  "_shasum": "256ec612642d8ce88709ffe2e3c3e8d15816c87e",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-stripe",
+  "_where": "/home/tubuntu/insideMobile/node_modules",
+  "author": {
+    "name": "Ibby Hadeed",
+    "email": "i.hadeed@zyra.ca"
+  },
+  "bugs": {
+    "url": "https://github.com/ihadeed/cordova-plugin-stripe/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-stripe",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "dependencies": {},
+  "description": "Cordova plugin that lets you use Stripe's Native SDKs for Android and iOS",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "256ec612642d8ce88709ffe2e3c3e8d15816c87e",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-stripe/-/cordova-plugin-stripe-1.4.1.tgz"
+  },
+  "gitHead": "93551198a7f188f8c27922b96bb4bbd567612361",
+  "homepage": "https://github.com/ihadeed/cordova-plugin-stripe#readme",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "stripe",
+    "phonegap",
+    "cordova-plugin"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "ihadeed",
+      "email": "i.hadeed@zyra.ca"
+    }
+  ],
+  "name": "cordova-plugin-stripe",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihadeed/cordova-plugin-stripe.git"
+  },
+  "scripts": {},
+  "version": "1.4.1"
+}
